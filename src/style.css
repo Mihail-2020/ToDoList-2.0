@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	max-width: 1440px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.todo-flex__block {
+	margin-bottom: 50px;
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.btn__add-task {
+	max-width: 100px;
+	width: 100%;
+
+	background: #a7a3a3;
+
+	border-radius: 15px;
+}
+.btn__add-task:hover {
+	background: #7e7a7a;
+}
+
+
+.list__task-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.list__task-checked {
+	cursor: pointer;
+}
+
+
+#modalAddTask {
+	display: none;
+}
+#modalAddTask.active {
+	display: block;
+}
+#modalEditTask {
+	display: none;
+}
+#modalEditTask.active {
+	display: block;
+}
+
+.modal__item {
+}
+.modal__title {
+}
+.modal__input {
+}
+.modal__menu-statys {
+}
+.modal__button {
+}
+
+.list__task-item[data-status="Высокий"] {
+	background: #a02d2d;
+}
+
+.list__task-item[data-checked="true"] {
+	background: #7e7a7a;
+}

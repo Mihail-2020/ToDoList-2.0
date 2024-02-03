@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="src/style.css">
+    <title>ToDoList 2.0</title>
+</head>
+<body>
+    <div class="todo-flex__block">
+        <h1>My TODO List 2.0</h1>
+        <button class="btn__add-task" id="btn__add-task">+</button>
+        <button id="creat_storage">--</button>
+    </div>
+
+    <div id="modalAddTask">
+        <div class="modal__block">
+            <div class="modal__item">
+                <h2 class="modal__title">Задача</h2>
+                <input type="text" class="modal__input" id="modal__input-add-task" placeholder="Введите задачу">
+            </div>
+            <div class="status__menu">
+                <div class="statis__option" data-status="1">
+                    <span class="status__text">Статус</span>
+                    <i class="gg-arrow-down"></i>
+                </div>
+
+                <ul class="options">
+                    <li class="option">
+                        <span class="option__text">Высокий</span>
+                    </li>
+                    <li class="option">
+                        <span class="option__text">Средний</span>
+                    </li>
+                    <li class="option">
+                        <span class="option__text">Низкий</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__item">
+                <button type="button" class="modal__button" id="modal__button-add-task">Добавить Задачу</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="row__error"></div>
+
+    <hr>
+<!-- СМОТРИ В TaskInfo.txt -->
+
+    <ul class="list__task" id="list__task">
+        <!-- <li class="list__task-item">
+            <div class="list__task-text">
+                <p class="list__task-input">
+                    Lorem, ipsum dolor.
+                </p>
+                <p class="list__task-status">
+                    Status
+                </p>
+            </div>
+            <div class="list__task-btn">
+                <button>Del</button>
+                <button>Edit</button>
+            </div>
+        </li> -->
+    </ul>
+
+
+    <!-- <div id="modalTask">
+        <div class="modal__block">
+            <div class="modal__item">
+                <h2 class="modal__title">Задача</h2>
+                <input type="text" class="modal__input" placeholder="Введите задачу">
+            </div>
+            <div class="modal__item">
+                <h2 class="modal__title">Статус</h2>
+                <div class="modal__menu-statys">
+
+                </div>
+            </div>
+            <div class="modal__item">
+                <h2 class="modal__title"></h2>
+                <button type="button" class="modal__button">Добавить Задачу</button>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div id="modalEditTask">
+        <div class="modal__block">
+            <div class="modal__item">
+                <h2 class="modal__title">Задача</h2>
+                <input type="text" class="modal__input" id="modal__input-edit-task" placeholder="Введите задачу">
+            </div>
+            <div class="edit__menu">
+                <div class="edit__option" data-status="2">
+                    <span class="edit__text">Статус</span>
+                    <i class="gg-arr ow-down"></i>
+                </div>
+
+                <ul class="options">
+                    <li class="edit-option">
+                        <span class="edit-option__text">Высокий</span>
+                    </li>
+                    <li class="edit-option">
+                        <span class="edit-option__text">Средний</span>
+                    </li>
+                    <li class="edit-option">
+                        <span class="edit-option__text">Низкий</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="modal__item">
+                <button type="button" class="modal__button" id="modal__button-edit-task">Изменить Задачу</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="src/statusMenu.js"></script>
+    <script src="src/app.js"></script>
+</body>
+</html>
