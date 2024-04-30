@@ -1,5 +1,5 @@
 const buttonAddTask = document.querySelector('#btn__add-task'),
-	creatStorage = document.querySelector('#creat_storage'),
+	clearStorage = document.querySelector('#clear_storage'),
 	elemListTask = document.querySelector('#list__task'),
 	modalAddTask = document.querySelector('#modalAddTask'),
 	modalEditTask = document.querySelector('#modalEditTask'),
@@ -9,7 +9,7 @@ const buttonAddTask = document.querySelector('#btn__add-task'),
 	elemButtonEditTask = document.querySelector('#modal__button-edit-task'),
 	errorMessage = document.querySelector('#row__error');
 
-creatStorage.addEventListener('click', () => {
+clearStorage.addEventListener('click', () => {
 	localStorage.clear();
 	document.querySelectorAll('li').forEach(item => elemListTask.removeChild(item))
 })
