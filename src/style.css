@@ -18,7 +18,9 @@ body {
 	margin: 0 auto;
 	padding: 30px 100px;
 
-	background-color: beige;
+	background-color: rgb(100, 203, 255);
+
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.4);
 
 	border-radius: 20px;
 }
@@ -33,7 +35,9 @@ body {
 .todo-flex__title {
 	padding: 10px;
 
-	background-color: rgb(192, 223, 223);
+	background-color: #fff;
+
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
 
 	border-radius: 20px;
 }
@@ -47,10 +51,22 @@ body {
 	font-size: 15px;
 	font-weight: 700;
 
-	background: rgb(192, 223, 223);
+	background: #fff;
 
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+
+	border: none;
 	border-radius: 15px;
 }
+/* .btn__add-task::after {
+	content: '';
+
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 1333;
+} */
 .btn__add-task:hover {
 	background: #7e7a7a;
 }
@@ -60,10 +76,22 @@ body {
 }
 
 /* List-task -------------------------------------------------------*/
+.list__task {
+	padding: 10px;
+}
 .list__task-item {
+	margin-bottom: 5px;
+	padding: 10px 20px;
+
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
+	background-color: #fff;
+	
+	box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+
+	border-radius: 15px;
 }
 
 .list__task-checked {
@@ -103,3 +131,10 @@ body {
 .modal__button {
 }
 
+
+
+.icon-arrow {
+	background: url(./icons/arrow-down.svg);
+	width: 30px;
+	height: 30px;
+}
